@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>WELCOME TO HELL</title>
+    </head>
+    <style>
+        body {
+            background-image: url('/home/yuki/Downloads/windows_xp_original-t2.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: 50% 50%;
+        }
+        .window{
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background-color: #ece9d8;
+            border: 2px solid #0053e1;
+            border-radius: 4px;
+        }
+        .ribbon{
+            position: absolute;
+            width: 200px;
+            height: 30px;
+            background: linear-gradient(#938BFD, #0053e1);
+            border: 2px solid #0053e1;
+            border-radius: 4px;
+            top: -125px;
+        }
+        .button{
+            border: 1px solid white;
+            border-radius: 4px;
+            background: linear-gradient(#FF7C63, #FB0404);
+            height: 20px;
+            width: 20px;
+            color: white;
+            padding: 1px 1px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 12px;
+            margin: 5px 5px;
+            cursor: pointer;
+            font-weight: bold;
+            position: relative;
+            float: right;
+        }
+        .center{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            top: 50%;
+            left: 50%;
+        }
+    </style>
+    <body>
+        <script>
+            function thisisaclickfunction() {
+                alert("What are you doing???")
+            }
+        </script>
+        <div class="center">
+            <div class="window"></div>
+            <div class="ribbon">
+                <button class="button" onclick="thisisaclickfunction()">X</button>
+            </div>
+        </div>
+    </body>
+</html>
