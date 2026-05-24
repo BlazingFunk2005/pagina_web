@@ -11,17 +11,17 @@
             background-position: 50% 50%;
         }
         .window{
-            position: absolute;
-            display: flex;
-            box-sizing: content-box;
-            width: 900px;
-            height: 600px;
-            background-color: #ece9d8;
+            display: inline-block;
+            box-sizing: border-box;
+            width: fit-content;
+            height: fit-content;
+            background-color: white;
             border: 2px solid #0053e1;
             border-radius: 4px;
+            margin: 20px;
         }
         .ribbon{
-            position: absolute;
+            position: relative;
             box-sizing: border-box;
             width: 100%;
             height: 30px;
@@ -76,18 +76,17 @@
             margin-left: 5px;
             font-family: Helvetica;
             font-weight: bold;
+            color: white;
             text-shadow: 1px 1px black;
             height: 100%;
         }
         .pleasework{
             box-sizing: border-box;
         }
-        .placeholder{
-            box-sizing: border-box;
+        .sideBar{
             background-color: white;
             border-right: solid 1px black;
             width: 160px;
-            height: 100%;
         }
         .goupplease{
             display: flex;
@@ -99,7 +98,7 @@
             align-items: center;
             height: 1px;
             width: 140px;
-            background-color: gray;
+            background-color: lightgray;
         }
         .mainPage{
             display: table;
@@ -121,19 +120,20 @@
             margin-left: -800px;
         }
         .wikiBox{
-            display: table-cell;
-            margin-top: 80px;
+            display: relative;
+            margin-top: 20px;
             margin-right: 10px;
+            margin-left: 10px;
             box-sizing: border-box;
             background-color: rgb(236, 236, 236);
             border: solid 1px black;
             width: 240px;
-            height: 80%;
+            height: 90%;
             text-align: center;
-            align-items: center;
         }
         .mainBody{
-            display: table-cell;
+            display: flex;
+            background-color: white;
         }
         .goRight{
             display: flex;
@@ -144,6 +144,12 @@
             justify-content: center;
             align-items: center;
         }
+        .mainBackground{
+            display: flex;
+        }
+        .gameCell{
+            display: flex;
+        }
     </style>
     <body>
         <script>
@@ -151,7 +157,7 @@
                 alert("What are you doing???")
             }
         </script>
-        <div>
+        <div class="mainBackground">
             <div class="window">
                 <div class="ribbon">
                     <button class="CloseButton" onclick="thisisaclickfunction()">X</button>
@@ -159,8 +165,9 @@
                     <button class="MaximizeButton">🗕</button>
                     <div class="WindowText", style="color: white;">Sowipedia - Maya Watt</div>
                 </div>
-                <div class="pleasework"">
-                    <div class="placeholder">
+            <div>
+                <div class="mainBody">
+                    <div class="sideBar">
                         <img style="width: 50%;margin-left: 25%;margin-top: 40px;", src="Wikipedia-logo-v2.svg.png" alt="">
                     <div style="margin-top: 10px;text-align: center;font-size: 24px;font-weight: bold;">Sowipedia</div>
                     <div style="margin-top: 10px;margin-bottom: 10px;text-align: center;">The Free Encyclopedia</div>
@@ -180,34 +187,60 @@
                     <div style="margin-top: 10px;text-align: center;color: #0053e1;text-decoration-line: underline;">Learn to edit</div>
                     <div style="margin-top: 10px;text-align: center;color: #0053e1;text-decoration-line: underline;">Community portal</div>
                     <div style="margin-top: 10px;text-align: center;color: #0053e1;text-decoration-line: underline;">Recent changes</div>
-                    <div style="margin-top: 10px;text-align: center;color: #0053e1;text-decoration-line: underline;">Upload file</div>
-                </div>
-            </div>
-            <div class="mainPage">
-                <div class="mainBody">
-                    <div style="margin-left: 10px;">
+                    <div style="margin-top: 10px;margin-bottom: 10px;text-align: center;color: #0053e1;text-decoration-line: underline;">Upload file</div>
+                    </div>
+                    <div>
+                        <div style="margin-left: 10px;margin-top: 20px;">
                         <h1>Maya Watt</h1>
                         <hr>
-                        <p>Maya Watt, Age 20, is a Chilean CS student and a gamer, spending most of her time on factory and automatization games.</p>
-                        <p>Hey so this is basically a personal webpage of sorts, you can find almost everything about me here like my future projects and where you can contact me and such, thank you for showing interest in my niche hobbies and such. ^w^</p>
+                        <p>Maya Watt, Age 20, is a Chilean CS student and a gamer, <br> spending most of her time on factory and automatization games.</p>
+                        <p>Hey so this is basically a personal webpage of sorts, <br> you can find almost everything about me here like my <br> future projects and where you can contact me and such, thank you <br> for showing interest in my niche hobbies and such. ^w^</p>
+                        </div>
                     </div>
-                </div>
-                <div class="goRight">
-                    <div class="wikiBox">
-                    <div style="margin-top: 5px;margin-bottom: 5px;font-size: 18px;">Maya Watt</div>
-                    <div class="imageWrapper">
-                        <img src="Untitled192_20260324183632.png" alt="">
-                    </div>
-                    <div>By Moscarda</div>
-                    <div style="margin-top: 10px;margin-bottom: 5px;"><b style="margin-right: 25px;">Born: </b>2nd of September, 2005</div>
-                    <div style="margin-top: 10px;margin-bottom: 5px;"><b style="margin-right: 100px;">Studies: </b>Duoc UC</div>
-                    <div style="margin-top: 10px;margin-bottom: 5px;"><b style="margin-right: 85px;">Pronouns: </b>She / Her</div>
-                    <div style="margin-top: 10px;margin-bottom: 5px;"><b style="margin-right: 85px;">Nationality: </b>Chilean</div>
-                    <div style="margin-top: 10px;margin-bottom: 5px;"><b style="margin-right: 92px;">Sexuality: </b>Bisexual</div>
-                    <div style="margin-top: 10px;margin-bottom: 5px;"><b style="margin-right: 50px;">Career: </b>Computer Science</div>
+                    <div>
+                        <div class="wikiBox">
+                            <div style="margin-top: 5px;margin-bottom: 5px;font-size: 18px;">Maya Watt</div>
+                            <div class="imageWrapper">
+                                <img src="Untitled192_20260324183632.png" alt="">
+                            </div>
+                            <div>By Moscarda</div>
+                            <div style="margin-top: 10px;margin-bottom: 5px;"><b style="margin-right: 25px;">Born: </b>2nd of September, 2005</div>
+                            <div style="margin-top: 10px;margin-bottom: 5px;"><b style="margin-right: 100px;">Studies: </b>Duoc UC</div>
+                            <div style="margin-top: 10px;margin-bottom: 5px;"><b style="margin-right: 85px;">Pronouns: </b>She / Her</div>
+                            <div style="margin-top: 10px;margin-bottom: 5px;"><b style="margin-right: 85px;">Nationality: </b>Chilean</div>
+                            <div style="margin-top: 10px;margin-bottom: 5px;"><b style="margin-right: 92px;">Sexuality: </b>Bisexual</div>
+                            <div style="margin-top: 10px;margin-bottom: 5px;"><b style="margin-right: 50px;">Career: </b>Computer Science</div>
+                        </div>
                     </div>
                 </div>
             </div>
+            </div>
+            <div class="window">
+                <div class="ribbon">
+                    <button class="CloseButton">X</button>
+                    <button class="MaximizeButton">🗖</button>
+                    <button class="MaximizeButton">🗕</button>
+                    <div class="WindowText">Favourite Games</div>
+                </div>
+                <div>
+                    <h1 style="margin-left: 50px;margin-right: 50px;">Favourite Games</h1>
+                    <hr>
+                    <div class="gameCell">
+                        <img style="margin-left: 10px;" src="cxd6h865itp71.png" alt="" height="100px" width="100px">
+                        <div>
+                            <h2 style="margin-left: 10px;">Factorio</h2>
+                            <p style="margin-left: 10px;margin-right: 10px;">Though i have not really played this one for as <br> long as the others it is still one of the games <br> that really inspired me to pursue engineering.</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="gameCell">
+                        <img style="margin-left: 10px;" src="The_SUn.webp" alt="" height="100px" width="100px">
+                        <div>
+                            <h2 style="margin-left: 10px;">Oneshot</h2>
+                            <p style="margin-left: 10px;margin-right: 10px;">Literally the best RPG maker game out there <br> and i'm not even lying, if you want to cry just <br> play this game.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </body>
