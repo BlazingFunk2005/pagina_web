@@ -121,14 +121,12 @@
         }
         .wikiBox{
             display: relative;
-            margin-top: 10px;
-            margin-right: 10px;
-            margin-left: 10px;
+            margin: 10px;
             box-sizing: border-box;
             background-color: rgb(236, 236, 236);
             border: solid 1px black;
             width: 240px;
-            height: 95%;
+            height: auto;
             text-align: center;
         }
         .mainBody{
@@ -166,7 +164,7 @@
             }
         </script>
         <div class="mainBackground">
-            <div class="window">
+            <div class="window" style="max-width: 950px;">
                 <div class="ribbon">
                     <button class="CloseButton" onclick="thisisaclickfunction()">X</button>
                     <button class="MaximizeButton">🗖</button>
@@ -197,56 +195,81 @@
                     <div style="margin-top: 10px;text-align: center;color: #0053e1;text-decoration-line: underline;">Recent changes</div>
                     <div style="margin-top: 10px;margin-bottom: 10px;text-align: center;color: #0053e1;text-decoration-line: underline;">Upload file</div>
                     </div>
-                    <div>
+                    <div style="max-width: 500px;">
                         <div style="margin-left: 10px;margin-top: 20px;">
                         <h1>Maya Watt</h1>
                         <hr>
-                        <p>Maya Watt, Age 20, is a Chilean CS student and a gamer, <br> spending most of her time on factory and automatization games.</p>
-                        <p>Hey so this is basically a personal webpage of sorts, <br> you can find almost everything about me here like my <br> future projects and where you can contact me and such, thank you <br> for showing interest in my niche hobbies and such. ^w^</p>
+                        <p>Maya Watt, Age 20, is a Chilean CS student and a gamer, spending most of her time on factory and automatization games.</p>
+                        <p>Hey so this is basically a personal webpage of sorts, you can find almost everything about me here like my future projects and where you can contact me and such, thank you for showing interest in my niche hobbies and such. ^w^</p>
                         </div>
                     </div>
                     <div>
+
                         <div class="wikiBox">
                             <div style="margin-top: 5px;margin-bottom: 5px;font-size: 18px;">Maya Watt</div>
                             <div class="imageWrapper">
                                 <img src="Untitled192_20260324183632.png" alt="">
                             </div>
                             <div>By Moscarda</div>
-                            <div style="margin-top: 10px;margin-bottom: 5px;"><b style="margin-right: 25px;">Born: </b>2nd of September, 2005</div>
-                            <div style="margin-top: 10px;margin-bottom: 5px;"><b style="margin-right: 100px;">Studies: </b>Duoc UC</div>
-                            <div style="margin-top: 10px;margin-bottom: 5px;"><b style="margin-right: 85px;">Pronouns: </b>She / Her</div>
-                            <div style="margin-top: 10px;margin-bottom: 5px;"><b style="margin-right: 85px;">Nationality: </b>Chilean</div>
-                            <div style="margin-top: 10px;margin-bottom: 5px;"><b style="margin-right: 92px;">Sexuality: </b>Bisexual</div>
-                            <div style="margin-top: 10px;margin-bottom: 5px;"><b style="margin-right: 50px;">Career: </b>Computer Science</div>
+                            <div>
+                                <div style="display: flex;margin-left: 10px;margin-right: 10px;justify-content: space-between;">
+                                <p>Born: </p>
+                                <p>2nd of September, 2005</p>
+                                </div>
+                                <div style="display: flex;margin-left: 10px;margin-right: 10px;justify-content: space-between;">
+                                <p>Studies:</p>
+                                <p>Duoc UC</p>
+                                </div>
+                                <div style="display: flex;margin-left: 10px;margin-right: 10px;justify-content: space-between;">
+                                <p>Pronouns</p>
+                                <p>She / Her</p>
+                                </div>
+                                <div style="display: flex;margin-left: 10px;margin-right: 10px;justify-content: space-between;">
+                                <p>Nationality:</p>
+                                <p>Chilean</p>
+                                </div>
+                                <div style="display: flex;margin-left: 10px;margin-right: 10px;justify-content: space-between;">
+                                <p>Sexuality:</p>
+                                <p>Bisexual</p>
+                                </div>
+                                <div style="display: flex;margin-left: 10px;margin-right: 10px;justify-content: space-between;">
+                                <p>Career:</p>
+                                <p>Computer Science</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             </div>
-            <div class="window">
+            <div class="window", style="max-width: 480px;max-height: 665px;">
                 <div class="ribbon">
                     <button class="CloseButton">X</button>
                     <button class="MaximizeButton">🗖</button>
                     <button class="MaximizeButton">🗕</button>
                     <div class="WindowText">Socials</div>
                 </div>
-                <div>
+                <div style="max-height: 620px;overflow-y: scroll;">
                     <h1 style="text-align: center;">Socials</h1>
                     <hr>
                     <div class="gameCell">
                         <img src="Logo_of_YouTube_(2011-2013).svg.png" alt="" style="margin-left: 10px;height: 5vh;width: auto;">
                         <div>
-                            <a href="https://www.youtube.com/channel/UC_EkUmtH2ygrZOJO38yHiOw"><h2 style="margin-left: 10px;">Channel</h2></a>
-                            <p style="margin-left: 10px;margin-right: 10px;">Here you can see me get mad at video games <br> and sometimes post my epic projects and stuff.</p>
+                            <div style="max-width: min-content;max-height: min-content;margin: 10px;">
+                                <a href="https://www.youtube.com/channel/UC_EkUmtH2ygrZOJO38yHiOw"><h2>Channel</h2></a>
+                            </div>
+                            <p style="margin-left: 10px;margin-right: 10px;">He re you can see me get mad at video games and sometimes post my epic projects and stuff.</p>
                         </div>
                     </div>
                     <hr>
                     <div class="gameCell">
                         <img style="margin-left: 10px;" src="Twitter_logo_(2006-2012).png" alt="" height="75px" width="75px">
                         <div>
+                        <div style="max-width: min-content;max-height: min-content;margin: 10px;">
                             <a href="https://x.com/MayaWattVT"><h2 style="margin-left: 10px;" >Twitter</h2></a>
-                            <p style="margin-left: 10px;margin-right: 10px;">This is where you can get updates and unfunny <br> jokes from me, nothing more nothing less.</p>
                         </div>
+                            <p style="margin-left: 10px;margin-right: 10px;">This is where you can get updates and unfunny jokes from me, nothing more nothing less.</p>
+                            </div>
                     </div>
                 </div>
             </div>
